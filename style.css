@@ -440,3 +440,22 @@ h3 {
     gap: 18px;
   }
 }
+
+@media (max-width: 600px) {
+  .section,
+  .how-it-works,
+  .spotlight,
+  .collaborate,
+  .join-content,
+  .about-content,
+  .event-entry {
+    padding-left: 4vw;
+    padding-right: 4vw;
+    box-sizing: border-box;
+  }
+  .footer,
+  .impact-numbers {
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+}
