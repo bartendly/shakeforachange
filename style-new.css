@@ -461,7 +461,8 @@
       font-size: 2rem;
     }
     .section-title {
-      font-size: 1.23rem;
+      /*font-size: 1.23rem;*/
+      font-size: 2rem;
     }
     .event-overlay, .event-seville {
       min-width: 99px;
@@ -478,7 +479,8 @@
       padding: 14px 1vw 0 1vw;
     }
     .section-title {
-      font-size: 0.98rem;
+      /*font-size: 0.98rem;*/
+      font-size: 1.8rem;
     }
   }  
 
