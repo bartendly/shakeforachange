@@ -574,4 +574,47 @@
       padding-bottom: 18px;
     }
   }
+
+  @media (max-width: 650px) {
+    .event-list-mobile {
+      display: block;
+      margin-top: 24px;
+      text-align: left;
+      color: var(--white);
+    }
+  
+    .event-list-mobile .event-item {
+      margin-bottom: 24px;
+      background: rgba(20,20,20,0.85);
+      padding: 16px 18px;
+      border-radius: 11px;
+    }
+  
+    .event-list-mobile .event-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--orange);
+      margin-bottom: 4px;
+    }
+  
+    .event-list-mobile .event-date {
+      font-size: 1rem;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+  
+    .event-list-mobile .event-desc {
+      font-size: 1rem;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+  
+    .event-list-mobile .event-link {
+      font-size: 0.98rem;
+      font-weight: 600;
+      color: var(--orange);
+      text-decoration: underline;
+    }
+  }
   
