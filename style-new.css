@@ -515,4 +515,63 @@
   .cta-secondary:hover {
     background-color: #fff;
     color: #000;
-  }  
+  }
+  
+  @media (max-width: 650px) {
+    .main-nav {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: nowrap;
+      gap: 0;
+    }
+    .logo {
+      font-size: 1rem;
+      max-width: 60%;
+    }
+    .cta-nav {
+      font-size: 0.85rem;
+      padding: 0.5em 1.4em;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .hero-bg {
+      background: url('images/hero_bartender.jpg') center center / cover no-repeat;
+    }
+  }
+
+  .event-list-mobile {
+    display: none;
+    margin-top: 24px;
+    text-align: left;
+    color: var(--white);
+  }
+  .event-item {
+    margin-bottom: 16px;
+    font-size: 1rem;
+  }
+  @media (max-width: 650px) {
+    .event-overlay {
+      display: none;
+    }
+    .event-list-mobile {
+      display: block;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .spotlight-join {
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+    .sponsor-testimonial {
+      padding-top: 28px;
+      padding-bottom: 28px;
+    }
+    .footer {
+      padding-top: 18px;
+      padding-bottom: 18px;
+    }
+  }
+  
