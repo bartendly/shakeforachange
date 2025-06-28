@@ -479,22 +479,40 @@
     }
   }  
 
-  .about-explainer {
+  .what-is-sfc {
     padding: 4rem 2rem;
-    max-width: 800px;
-    margin: 0 auto;
     text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
     color: #eee;
   }
   
-  .about-explainer h2 {
+  .what-is-sfc h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    font-weight: 700;
+    font-weight: bold;
   }
   
-  .about-explainer p {
+  .what-is-sfc p {
     font-size: 1.1rem;
-    line-height: 1.6;
     color: #ccc;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-secondary {
+    display: inline-block;
+    padding: 0.9rem 1.8rem;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .cta-secondary:hover {
+    background-color: #fff;
+    color: #000;
   }  
