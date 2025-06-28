@@ -83,6 +83,7 @@
 
   body {
     background-color: #0a0a0a; /* plus proche du noir de l’image hero */
+    color-scheme: only dark;
   }
 
   .hero-bg::after {
@@ -160,8 +161,10 @@
     font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    margin-bottom: 36px;
+    margin-bottom: 20px;
     color: var(--white);
+    padding-top: 1.5rem; /* ou diminue la valeur actuelle */
+    text-align: center;
   }
   .map-block {
     position: relative;
@@ -170,7 +173,7 @@
   }
   .map-img {
     width: 100%;
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 0 4px 32px rgba(0,0,0,0.18);
     display: block;
   }
@@ -532,6 +535,7 @@
     .cta-nav {
       font-size: 0.85rem;
       padding: 0.5em 1.4em;
+      margin-right: 12px;
     }
   }
 
