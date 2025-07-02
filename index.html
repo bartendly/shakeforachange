@@ -1,156 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Shake for a Change – The Unseen Side of the Bar. Global movement for bartenders, brands, and unforgettable nights." />
-  <title>Shake for a Change</title>
-  <link rel="stylesheet" href="style-new.css?v=7" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bartendly connects you with top bartenders and mixologists in global cities like London and Hong Kong. Perfect for upscale events, cocktail classes, and private parties. Fast, commission-free, and verified talent." />
+    <meta name="keywords" content="book bartender online, hire mixologist, cocktail class, private bartender, mixology experience, bartender platform, global bartending, international cocktail events" />
+    <meta name="author" content="Bartendly" />
+    <meta name="robots" content="index, follow" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:title" content="Bartendly | Book Bartenders in London, Hong Kong & More" />
+    <meta property="og:description" content="Hire top bartenders and mixologists for events in your city. Fast, easy, commission-free." />
+    <meta property="og:image" content="https://www.bartendly.com/images/hero3.webp" />
+    <meta property="og:url" content="https://www.bartendly.com" />
+    <meta property="og:type" content="website" />   
+    <title>Hire Bartenders in your city for Events & Parties | Bartendly</title>
+    <link rel="stylesheet" href="bartendly.min.css">
+    <link rel="canonical" href="https://www.bartendly.com/" />
+    <link rel="preload" as="image" href="images/hero3.webp" type="image/webp">
+    <link rel="icon" href="https://www.bartendly.com/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+ 
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Bartendly",
+        "url": "https://www.bartendly.com",
+        "logo": "https://www.bartendly.com/images/logo.png",
+        "description": "Bartendly connects clients with professional bartenders and mixologists for events in cities like London, Hong Kong, and more.",
+        "email": "martial@bartendly.com",
+        "areaServed": [
+          {
+            "@type": "Place",
+            "name": "London"
+          },
+          {
+            "@type": "Place",
+            "name": "Hong Kong"
+          }
+        ],
+        "sameAs": [
+          "https://instagram.com/bartendly",
+          "https://facebook.com/bartendly",
+          "https://linkedin.com/company/bartendly"
+        ]
+      }
+      </script>
 </head>
 <body>
-  <!-- HERO -->
-  <header class="hero">
-    <nav class="main-nav">
-      <div class="logo">SHAKE FOR A CHANGE</div>
-      <div class="nav-cta"><a href="#apply" class="cta-nav">Apply</a></div>
-    </nav>
-    <div class="hero-content">
-      <div class="hero-text">
-        <h1>Unseen.<br>Unstoppable.</h1>
-        <p class="hero-lead">
-          A new global stage for bartenders who deserve it —<br>
-          and for the nights you'll never forget.
-        </p>
-        <div class="hero-stats">
-          <div><span>🌍 12</span> Countries</div>
-          <div><span>🍸 35</span> Bartenders</div>
-          <div><span>💯 100%</span> Reinvested</div>
+  <header>
+    <div class="logo"><a href="#">Bartendly</a></div>
+    <div class="header-right">
+      <nav>
+        <a href="#how-it-works">How it Works</a>
+        <a href="#bartenders">Meet the bartenders</a>
+      </nav>
+  
+      <!-- Globe icon with helper (clean version) -->
+      <div class="globe-wrapper">
+        <button id="city-toggle" aria-label="Choose your city" class="globe-icon">🌍</button>
+        <div class="globe-helper" aria-hidden="true">
+          <span class="arrow"></span>
+          Choose your city
         </div>
-        <a href="#movement" class="cta-main">Discover the Movement</a>
+      </div>
+      
+  
+      <!-- City menu that shows on click -->
+      <div id="city-menu" class="city-menu" hidden>
+        <ul>
+          <li><a href="/london/">🇬🇧 London</a></li>
+          <li><a href="/hong-kong/">🇭🇰 Hong Kong</a></li>
+          <li>
+            <a href="/barcelona/">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 30" width="19" height="11.87" aria-label="Catalonia Flag" style="vertical-align:middle;margin-right:0.25em">
+                <rect width="50" height="30" fill="#fcdd09"/>
+                <rect y="0" width="50" height="6" fill="#da121a"/>
+                <rect y="12" width="50" height="6" fill="#da121a"/>
+                <rect y="24" width="50" height="6" fill="#da121a"/>
+              </svg>
+              Barcelona
+            </a>
+          </li>          
+        </ul>
       </div>
     </div>
-    <!-- Replace with your hero image in images/hero_bartender.jpg -->
-    <div class="hero-bg"></div>
   </header>
+  
 
-  <!-- MAP + EVENTS -->
-  <section class="map-events" id="movement">
-    <h2 class="section-title">From Manila to Seville, our bartenders are taking over.</h2>
-    <div class="map-block">
-      <img src="images/map_events.jpg" srcset="images/map_events.webp 1x, images/map_events.jpg 2x" alt="Map with event locations" class="map-img" />
-      <div class="event-overlay event-manila">
-        <div class="event-title">Manila</div>
-        <div class="event-date">July 2025</div>
-        <div class="event-desc">One night. One bartender.<br>One city watching.</div>
-        <a href="#" class="event-link">See Details</a>
-      </div>
-      <div class="event-overlay event-seville">
-        <div class="event-title">Seville</div>
-        <div class="event-date">August 2025</div>
-        <div class="event-desc">Unseen talent.<br>Unforgettable night.</div>
-        <a href="#" class="event-link">See Details</a>
-      </div>
-    </div>
-    <div class="event-list-mobile">
-        <div class="event-item">
-          <div class="event-title">Manila</div>
-          <div class="event-date">July 5, 2025</div>
-          <div class="event-desc">One night. One bar. One story you won’t forget.</div>
-          <a href="#" class="event-link">See details</a>
-        </div>
-        <div class="event-item">
-          <div class="event-title">Seville</div>
-          <div class="event-date">July 11, 2025</div>
-          <div class="event-desc">One night. One bar. One story you won’t forget.</div>
-          <a href="#" class="event-link">See details</a>
-        </div>
-      </div>      
-  </section>
+<section class="hero">
+  <h1>Elevate Your Event with Professional Bartending Services</h1>
+  <p>Bartendly connects you with experienced, high-end bartenders & mixologists for private events, corporate functions, and cocktail experiences in London and Hong Kong</p>
+  <a href="#book" class="cta-btn">Request a Bartender</a>
+  <picture>
+    <source srcset="images/hero3.webp" type="image/webp">
+    <img src="images/hero3.jpeg" alt="Bartender mixing cocktails at a private event" loading="lazy" width="1200" height="800" style="width: 100%; height: auto;">
+  </picture>
+</section>
 
-  <!-- HOW IT WORKS -->
-  <section class="how-it-works">
-    <div class="steps">
-      <div class="step">
-        <div class="step-icon">🎤</div>
-        <div class="step-title">Apply to Join</div>
-        <div class="step-desc">Bartenders sign up to headline.</div>
-      </div>
-      <div class="step">
-        <div class="step-icon">🍸</div>
-        <div class="step-title">Take Over the Bar</div>
-        <div class="step-desc">You run the night. Your story, your crowd.</div>
-      </div>
-      <div class="step">
-        <div class="step-icon">🔁</div>
-        <div class="step-title">Impact Amplified</div>
-        <div class="step-desc">All profits fund the next bartender.</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="what-is-sfc">
-    <h2>What is Shake for a Change?</h2>
+<section class="intro">
+  <div class="container">
     <p>
-      Global impact. Local empowerment. Zero greenwashing.<br>
-      Each night gives a voice — and the spotlight — to a bartender who deserves it.<br><br>
-      No waste. No elitism.<br>
-      Just circularity, visibility, and the best cocktails you’ve never tasted.
+      At Bartendly, we believe every occasion deserves exceptional service. Whether you are planning an intimate gathering, a wedding, or a corporate soirée, our hand-selected bartenders bring expertise, style, and a touch of sophistication to your event.
     </p>
-    <a href="#" class="cta-secondary">Learn more</a>
-  </section>
+  </div>
+</section>
 
-  <!-- BARTENDER SPOTLIGHT + JOIN CTA -->
-  <section class="spotlight-join" id="apply">
-    <div class="join-cta">
-      <h2>Bartender? Ready to headline your own city?</h2>
-      <a href="mailto:contact@shakeforachange.com?subject=Apply%20as%20Bartender" class="cta-join">APPLY NOW</a>
-    </div>
-    <div class="spotlight-row">
-      <div class="spotlight-card">
-        <img src="images/juliadiaz.jpg" srcset="images/juliadiaz.webp 1x, images/juliadiaz.jpg 2x" alt="Julia Díaz, Seville" />
-        <div class="spotlight-name">Julia Díaz</div>
-        <div class="spotlight-city">Seville</div>
-        <a href="#" class="spotlight-link">See their story →</a>
-      </div>
-      <div class="spotlight-card">
-        <img src="images/hiroshi_yamamoto.jpg" srcset="images/hiroshi_yamamoto.webp 1x, images/hiroshi_yamamoto.jpg 2x" alt="Hiroshi Yamamoto, Tokyo" />
-        <div class="spotlight-name">Hiroshi Yamamoto</div>
-        <div class="spotlight-city">Tokyo</div>
-        <a href="#" class="spotlight-link">See their story →</a>
-      </div>
+  <section id="how-it-works">
+    <h2 class="section-title">How It Works</h2>
+    <div class="how-it-works">
+      <h3>1. Tell Us About Your Event</h3>
+      <p>Share your event details — date, location, type of occasion, and any special requests.</p>
+      <h3>2. Receive Proposals</h3>
+      <p>Top bartenders and mixologists will respond quickly with tailored offers.</p>
+      <h3>3. Book Directly</h3>
+      <p>Select your favorite and book directly — simple, fast, and transparent.</p>
     </div>
   </section>
 
-  <!-- SPONSORS + TESTIMONIAL -->
-  <section class="sponsor-testimonial">
-    <div class="sponsor-block">
-      <h2>Bars & Brands: Be Part of the Movement</h2>
-      <p>Host a takeover, sponsor a bartender, or make your mark on the future of cocktails.</p>
-      <a href="mailto:contact@shakeforachange.com?subject=Register%20Bar" class="cta-sponsor">Register as Bar</a>
-      <a href="mailto:contact@shakeforachange.com?subject=Sponsor%20Request" class="cta-sponsor">Become a Sponsor</a>
+<!-- START CARROUSSEL -->
+<section id="bartenders" class="bartender-carousel" aria-label="Featured Bartenders from Hong Kong and London">
+  <div class="carousel-header">
+    <h2>Meet some of the best bartenders in Hong Kong and London</h2>
+  </div>
+
+  <div class="swiper" id="carousel" role="region" aria-roledescription="carousel" aria-label="Bartender Profiles Carousel" aria-live="polite">
+    <div class="swiper-wrapper">
+      <!-- Slides added via JS -->
+    </div>
+
+    <!-- Navigation buttons -->
+    <button class="swiper-button-prev" type="button" aria-label="Previous bartender" aria-controls="carousel"></button>
+    <button class="swiper-button-next" type="button" aria-label="Next bartender" aria-controls="carousel"></button>
+
+    <!-- Optional pagination -->
+    <div class="swiper-pagination" aria-hidden="true"></div>
+  </div>
+
+  <!--<p class="view-all-link">
+    <a href="/bartenders" class="carousel-link" aria-label="View all featured bartenders in Hong Kong">
+      View all featured bartenders →
+    </a>
+  </p>-->
+</section>
+
+
+
+<section id="why-bartendly">
+  <h2 class="section-title">Why Choose Bartendly?</h2>
+  <div class="why-bartendly">
+    <ul>
+      <li>✅ Only trusted, pre-vetted professional bartenders</li>
+      <li>🥂 Ideal for both private gatherings and corporate events across Hong Kong, London & more</li>
+      <li>⚡ Fast, hassle-free booking — no surprises</li>
+      <li>📍 Locally based in Hong Kong and London, we understand the scene like no one else</li>
+    </ul>
+  </div>
+</section>
+
+  <section id="book" class="form-section">
+    <div class="form-container">
+   <h2 id="formTitle" class="form-title">Book a World-Class Bartender for Your Event</h2>
+    <p class="form-subtitle">No account needed. Connect instantly with top bartenders.</p>
+    <form role="form" aria-labelledby="formTitle" action="https://formspree.io/f/mdkevral" method="POST" id="contact-form">
+       <label for="client_type" class="sr-only">Client type</label>
+       <select id="client_type" name="client_type" aria-label="Select client type">
+          <option value="Private" selected>Private customer</option>
+          <option value="Corporate">Corporate</option>
+        </select>
+        <label for="city" class="sr-only">City</label>
+        <select id="city" name="city" aria-label="Select a city" required>
+          <option value="">Select a city</option>
+          <option value="London">London</option>
+          <option value="Hong Kong">Hong Kong</option>
+        </select>
+        <label for="name" class="sr-only">Name</label>
+        <input id="name" type="text" name="name" placeholder="Your Name" required />
+        <label for="phone" class="sr-only">Your Phone/Whatsapp Number</label>
+        <input id="phone" type="tel" name="phone" placeholder="Your Phone/Whatsapp Number" />
+        <label for="email" class="sr-only">Your Email</label>
+        <input id="email" type="email" name="email" placeholder="Your Email" />
+        <label for="date" class="sr-only">The event date</label>
+        <input id="date" type="text" name="date" placeholder="The event date" required/>
+        <label for="details" class="sr-only">Details about your event</label>
+        <textarea id="details" name="details" placeholder="Details about your event (optional)" rows="2"></textarea> 
+        <label for="address" class="sr-only">Event Address</label>
+        <input id="address" type="text" name="address" placeholder="Event Address (optional)" />
+        <label for="participants" class="sr-only">Number of participants</label>
+        <input id="participants" type="number" name="participants" placeholder="Number of Participants (optional)" />
+        <div class="form-consent">
+          <input type="checkbox" id="consent" name="consent" checked>
+          <label for="consent">I agree to be contacted directly by available bartenders.</label>
+        </div>
+        <button type="submit">Send Request</button>
+      </form>
+      <div id="success-message" class="success-message" aria-live="polite">We will come back to you shortly with proposals from professional bartenders.</div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About Bartendly</h2>
+    <div class="about">
+      <p><strong>Our Vision:</strong> To make world-class bartending accessible to everyone, everywhere — elevating events with unforgettable cocktail experiences.</p> 
+      <p>Bartendly was founded by a team of seasoned bartenders and IT professionals with a shared passion for hospitality and innovation. Our bartenders have worked in some of the world's most renowned venues, including several of the <em>World’s 50 Best Bars</em>, bringing decades of expertise to every event.</p>
+      <p>Previously, we helped create the global bartending community <strong>World of Mixologists</strong> and the popular Instagram page <a href="https://www.instagram.com/world.of.mixologists/" target="_blank">@world.of.mixologists</a>, connecting cocktail lovers and professionals around the globe.</p>
+      <p>With Bartendly, we aim to bridge the gap between talented bartenders and people seeking exceptional service for private parties, corporate events, and special occasions. Starting in Hong Kong and London, our goal is to expand worldwide — one unforgettable cocktail at a time.</p>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2 class="section-title">What Our Customers Are Saying</h2>
+    <div class="testimonial">
+      <blockquote>
+        “Fantastic cocktails and seamless communication from start to finish. We’ll definitely book again for our next event.”
+        <footer>— Priya S., London</footer>
+      </blockquote>
     </div>
     <div class="testimonial">
       <blockquote>
-        “I was invisible. Now I’m a headliner. Shake for a Change changed everything.”<br>
-        <span class="testimonial-name">— Julia Díaz, Seville</span>
+        “Professional, elegant, and easy to work with. Highly recommend Bartendly for any private event.”
+        <footer>— Michelle L., Central District, Hong Kong</footer>
       </blockquote>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-partners">
-      <img src="images/altos_logo.png" alt="Altos Tequila" />
-      <img src="images/bartendly.png" alt="Bartendly" />
-      <img src="images/world_of_mixologists_logo.png" alt="World of Mixologists" />
+  <section id="faq">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>When should I book my bartender?</h3>
+      <p>We recommend booking at least two weeks in advance to secure the best availability.</p>
     </div>
-    <div class="footer-socials">
-      <a href="https://instagram.com/shakeforachange">@shakeforachange</a>
-      <span> | </span>
-      <a href="https://instagram.com/bartendly">@bartendly</a>
+  
+    <div class="faq-item">
+      <h3>Can I request specific cocktails or a theme?</h3>
+      <p>Absolutely. Our bartenders can create bespoke menus tailored to your event.</p>
     </div>
-    <div class="footer-copy">© 2025 Shake for a Change</div>
+  
+    <div class="faq-item">
+      <h3>Do I need to provide my own ingredients?</h3>
+      <p>No, our bartenders will bring all necessary ingredients and equipment for your event.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="mailto:martial@bartendly.com">Contact Us</a>
+    </div>
+  
+    <div class="social-links">
+      <a href="https://facebook.com/bartendly" target="_blank" class="facebook" aria-label="Visit us on Facebook">
+        <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+      </a>
+      <a href="https://instagram.com/bartendly" target="_blank" class="instagram" aria-label="Visit us on Instagram">
+        <i class="fab fa-instagram fa-lg" aria-hidden="true"></i>
+      </a>
+      <a href="https://linkedin.com/company/bartendly" target="_blank" class="linkedin" aria-label="Visit us on Linkedin">
+        <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+      </a>
+      <a href="https://wa.me/34618502493" target="_blank" aria-label="Contact us on WhatsApp">
+        <i class="fab fa-whatsapp fa-lg whatsapp-icon" aria-hidden="true"></i>
+      </a>
+    </div>
+  
+    <p>&copy; 2025 Bartendly. All rights reserved.</p>
+  
+    <div class="cta-footer">
+      <p>Ready to elevate your next event?</p>
+      <a href="#book" class="cta-btn">Request a Bartender</a>
+    </div>
   </footer>
+
+<!-- External libraries -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Bartendly js-->
+<script src="data.js" defer></script>
+<script src="bartendly.min.js" defer></script>
 </body>
 </html>
